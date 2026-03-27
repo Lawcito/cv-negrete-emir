@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Jeronimo Murcia | Ingeniero de Software</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="menu-navegacion">
+        <div class="nav-container">
+          <a href="#" class="nav-logo" aria-label="Volver al inicio">
+            <img src="./assets/perfil.jpg" alt="Ir al inicio" />
+          </a>
+
+          <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+
+          <button
+            id="toggle-tema"
+            class="boton-tema"
+            aria-label="Cambiar a modo oscuro"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+      <header>
+        <h1>Jeronimo Murcia</h1>
+        <h2>Ingeniero de Software</h2>
+        <img src="./assets/perfil.jpg" alt="Imagen de perfil de Jeronimo Murcia" />
+      </header>
+
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un Ingeniero de Software orientado a resultados con amplia
+          experiencia en la creación de aplicaciones empresariales escalables.
+          Mi especialidad es el diseño y desarrollo de arquitecturas de
+          microservicios utilizando Java y Spring Boot, apoyándome fuertemente
+          en servicios en la nube como AWS. Disfruto optimizando el rendimiento
+          de bases de datos NoSQL como MongoDB y colaborando en equipos ágiles
+          para entregar productos robustos que resuelvan necesidades de negocio
+          complejas.
+        </p>
+      </section>
+
+      <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul class="experiencia-laboral">
+          <li class="experiencia-item">
+            <div class="imagen-container">
+              <a
+                href="https://careers-meli.mercadolibre.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/mercadoLibre.png"
+                  alt="Logo de Mercado Libre"
+                />
+              </a>
+            </div>
+
+            <div class="info-container">
+              <h3>Ingeniero Backend Ssr.</h3>
+              <h4>
+                <a
+                  href="https://careers-meli.mercadolibre.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Mercado Libre</a
+                >
+              </h4>
+              <span class="fecha">Marzo 2023 - Presente</span>
+
+              <ul class="tareas-lista">
+                <li>
+                  Lideré la migración de un sistema monolítico hacia una
+                  arquitectura de microservicios utilizando Java y Spring Boot
+                  para el ecosistema de pagos.
+                </li>
+                <li>
+                  Optimicé consultas complejas en clústeres de bases de datos,
+                  reduciendo el tiempo de respuesta de la API de transacciones
+                  en un 35%.
+                </li>
+                <li>
+                  Colaboré en la configuración de la infraestructura en la nube
+                  utilizando AWS (EC2, S3, RDS) para asegurar alta
+                  disponibilidad en eventos masivos.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="experiencia-item">
+            <div class="imagen-container">
+              <a
+                href="https://www.despegar.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/despegar.png"
+                  alt="Logo de Despegar"
+                />
+              </a>
+            </div>
+
+            <div class="info-container">
+              <h3>Desarrollador de Software Core</h3>
+              <h4>
+                <a
+                  href="https://www.despegar.com.ar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Despegar</a
+                >
+              </h4>
+              <span class="fecha">Febrero 2020 - Febrero 2023</span>
+
+              <ul class="tareas-lista">
+                <li>
+                  Desarrollé servicios de alta concurrencia en Golang para el
+                  motor de búsqueda de vuelos, procesando miles de peticiones
+                  por segundo.
+                </li>
+                <li>
+                  Implementé y administré orquestación de contenedores con
+                  Kubernetes en Google Cloud Platform (GCP) para mejorar la
+                  escalabilidad dinámica.
+                </li>
+                <li>
+                  Diseñé flujos de comunicación eficientes entre microservicios
+                  utilizando gRPC y Protocol Buffers, reduciendo la latencia de
+                  red.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="habilidades" class="habilidades-tecnicas">
+        <h2>Stack Tecnológico Destacado</h2>
+        <div class="contenedor-tecnologias">
+          <article class="tarjeta-tech">
+            <div class="icono-tech">
+              <img src="./assets/kubernetes.png" alt="Logo de Kubernetes" />
+            </div>
+            <div class="contenido-tech">
+              <h3>Kubernetes (K8s)</h3>
+              <p>
+                Orquestación avanzada de contenedores en entornos multinube (AWS
+                y GCP). Herramienta clave para el despliegue y escalabilidad
+                automática de arquitecturas de microservicios.
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta-tech">
+            <div class="icono-tech">
+              <img src="./assets/postgreSQL.png" alt="Logo de PostgreSQL" />
+            </div>
+            <div class="contenido-tech">
+              <h3>PostgreSQL</h3>
+              <p>
+                Diseño, modelado y optimización de bases de datos relacionales
+                robustas. Experiencia gestionando instancias de alta
+                disponibilidad mediante servicios administrados como AWS RDS.
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta-tech">
+            <div class="icono-tech">
+              <img src="./assets/datadog.png" alt="Logo de Datadog" />
+            </div>
+            <div class="contenido-tech">
+              <h3>Observabilidad (Datadog)</h3>
+              <p>
+                Implementación de telemetría, monitoreo y trazabilidad
+                distribuida para sistemas de alta concurrencia, asegurando el
+                rendimiento y detectando cuellos de botella en tiempo real.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="seccion-contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Te interesa mi perfil? ¡Dejame un mensaje y coordinamos una
+          entrevista!
+        </p>
+
+        <form action="#" method="POST" class="formulario-contacto">
+          <div class="grupo-input">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+
+          <div class="grupo-input">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+
+          <div class="grupo-input">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="grupo-input">
+            <input type="submit" value="Enviar Mensaje" class="boton-enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jeronimo Murcia. Proyecto de práctica de programación.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
