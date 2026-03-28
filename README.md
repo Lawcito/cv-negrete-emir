@@ -1,4 +1,2 @@
-Trabajo práctico n°1 Programación.
-Curriculúm Web 
-Negrete Emir
-https://lawcito.github.io/cv-negrete-emir/
+Trabajo práctico nº1. Curriculum
+Web - Negrete Emir - https://lawcito.github.io/cv-negrete-emir/
