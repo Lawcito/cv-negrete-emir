@@ -9,8 +9,16 @@ html {
   --ocean-mist: #44bba4;
   --tuscan-sun: #e7bb41;
 
-  --font-titulos: "Merriweather", serif;
-  --font-cuerpo: "TASA Explorer", sans-serif;
+  --font-main: "Merriweather Local", serif;
+  --base-font-size: 1rem;
+}
+
+@font-face {
+  font-family: "Merriweather Local";
+  src: url("./assets/fonts/Merriweather_24pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -20,11 +28,12 @@ html {
 }
 
 body {
-  font-family: var(--font-cuerpo);
   background-color: var(--alabaster-grey);
   color: var(--gunmetal);
   line-height: 1.6;
   padding: 2rem 1rem;
+  font-family: var(--font-main);
+  font-size: var(--base-font-size);
 }
 
 main {
@@ -35,7 +44,10 @@ main {
   box-shadow: 0 10px 30px rgba(57, 62, 65, 0.1);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-titulos);
   color: var(--gunmetal);
   line-height: 1.2;
