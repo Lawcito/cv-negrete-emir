@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const botonTema = document.getElementById("toggle-tema");
+  const themeButton = document.getElementById("toggle-theme");
   const body = document.body;
 
-  const temaGuardado = localStorage.getItem("tema");
+  const savedTheme = localStorage.getItem("theme");
 
-  if (temaGuardado === "oscuro") {
-    body.classList.add("tema-oscuro");
-    botonTema.textContent = "☀️";
+  if (savedTheme === "dark") {
+    body.classList.add("theme-dark");
+    themeButton.textContent = "☀️";
   }
 
-  botonTema.addEventListener("click", () => {
-    body.classList.toggle("tema-oscuro");
+  themeButton.addEventListener("click", () => {
+    body.classList.toggle("theme-dark");
 
-    if (body.classList.contains("tema-oscuro")) {
-      localStorage.setItem("tema", "oscuro");
-      botonTema.textContent = "☀️";
+    if (body.classList.contains("theme-dark")) {
+      localStorage.setItem("theme", "dark");
+      themeButton.textContent = "☀️";
     } else {
-      localStorage.setItem("tema", "claro");
-      botonTema.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+      themeButton.textContent = "🌙";
     }
   });
 });
