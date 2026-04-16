@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <nav class="menu-navegacion">
+      <nav class="navigation-menu">
         <div class="nav-container">
           <a href="#" class="nav-logo" aria-label="Volver al inicio">
             <img src="./assets/perfil.jpg" alt="Ir al inicio" />
@@ -22,8 +22,8 @@
           </ul>
 
           <button
-            id="toggle-tema"
-            class="boton-tema"
+            id="toggle-theme"
+            class="theme-button"
             aria-label="Cambiar a modo oscuro"
           >
             🌙
@@ -36,7 +36,7 @@
         <img src="./assets/perfil.jpg" alt="Imagen de perfil de Jeronimo Murcia" />
       </header>
 
-      <section id="sobre-mi">
+      <section id="about-me">
         <h2>Sobre mí</h2>
         <p>
           Soy un Ingeniero de Software orientado a resultados con amplia
@@ -50,11 +50,11 @@
         </p>
       </section>
 
-      <section id="experiencia">
+      <section id="experience">
         <h2>Experiencia Laboral</h2>
-        <ul class="experiencia-laboral">
-          <li class="experiencia-item">
-            <div class="imagen-container">
+        <ul class="laboral-experience">
+          <li class="laboral-experience-item">
+            <div class="image-container">
               <a
                 href="https://careers-meli.mercadolibre.com/"
                 target="_blank"
@@ -79,7 +79,7 @@
               </h4>
               <span class="fecha">Marzo 2023 - Presente</span>
 
-              <ul class="tareas-lista">
+              <ul class="tasks-list">
                 <li>
                   Lideré la migración de un sistema monolítico hacia una
                   arquitectura de microservicios utilizando Java y Spring Boot
@@ -99,8 +99,8 @@
             </div>
           </li>
 
-          <li class="experiencia-item">
-            <div class="imagen-container">
+          <li class="laboral-experience-item">
+            <div class="image-container">
               <a
                 href="https://www.despegar.com.ar/"
                 target="_blank"
@@ -123,9 +123,9 @@
                   >Despegar</a
                 >
               </h4>
-              <span class="fecha">Febrero 2020 - Febrero 2023</span>
+              <span class="date">Febrero 2020 - Febrero 2023</span>
 
-              <ul class="tareas-lista">
+              <ul class="tasks-list">
                 <li>
                   Desarrollé servicios de alta concurrencia en Golang para el
                   motor de búsqueda de vuelos, procesando miles de peticiones
@@ -147,14 +147,14 @@
         </ul>
       </section>
 
-      <section id="habilidades" class="habilidades-tecnicas">
+      <section id="skills" class="technical-skills">
         <h2>Stack Tecnológico Destacado</h2>
-        <div class="contenedor-tecnologias">
-          <article class="tarjeta-tech">
-            <div class="icono-tech">
+        <div class="technical-skills-container">
+          <article class="technical-skill-card">
+            <div class="technical-skill-icon">
               <img src="./assets/kubernetes.png" alt="Logo de Kubernetes" />
             </div>
-            <div class="contenido-tech">
+            <div class="technical-skill-content">
               <h3>Kubernetes (K8s)</h3>
               <p>
                 Orquestación avanzada de contenedores en entornos multinube (AWS
@@ -164,11 +164,11 @@
             </div>
           </article>
 
-          <article class="tarjeta-tech">
-            <div class="icono-tech">
+          <article class="technical-skill-card">
+            <div class="technical-skill-icon">
               <img src="./assets/postgreSQL.png" alt="Logo de PostgreSQL" />
             </div>
-            <div class="contenido-tech">
+            <div class="technical-skill-content">
               <h3>PostgreSQL</h3>
               <p>
                 Diseño, modelado y optimización de bases de datos relacionales
@@ -178,11 +178,11 @@
             </div>
           </article>
 
-          <article class="tarjeta-tech">
-            <div class="icono-tech">
+          <article class="technical-skill-card">
+            <div class="technical-skill-icon">
               <img src="./assets/datadog.png" alt="Logo de Datadog" />
             </div>
-            <div class="contenido-tech">
+            <div class="technical-skill-content">
               <h3>Observabilidad (Datadog)</h3>
               <p>
                 Implementación de telemetría, monitoreo y trazabilidad
@@ -194,15 +194,15 @@
         </div>
       </section>
 
-      <section id="contacto" class="seccion-contacto">
+      <section id="contact" class="contact-section">
         <h2>Contacto</h2>
         <p>
           ¿Te interesa mi perfil? ¡Dejame un mensaje y coordinamos una
           entrevista!
         </p>
 
-        <form action="#" method="POST" class="formulario-contacto">
-          <div class="grupo-input">
+        <form action="#" method="POST" class="contact-form">
+          <div class="input-group">
             <label for="nombre">Nombre:</label>
             <input
               type="text"
@@ -213,7 +213,7 @@
             />
           </div>
 
-          <div class="grupo-input">
+          <div class="input-group">
             <label for="email">Email:</label>
             <input
               type="email"
@@ -224,7 +224,7 @@
             />
           </div>
 
-          <div class="grupo-input">
+          <div class="input-group">
             <label for="mensaje">Mensaje:</label>
             <textarea
               id="mensaje"
@@ -235,8 +235,8 @@
             ></textarea>
           </div>
 
-          <div class="grupo-input">
-            <input type="submit" value="Enviar Mensaje" class="boton-enviar" />
+          <div class="input-group">
+            <input type="submit" value="Enviar Mensaje" class="send-button" />
           </div>
         </form>
       </section>
