@@ -16,14 +16,14 @@
       <nav class="navigation-menu">
         <div class="nav-container">
           <a href="#" class="nav-logo" aria-label="Volver al inicio">
-            <img src="./assets/perfil.jpg" alt="Ir al inicio" />
+            <img class="nav-logo-img" src="./assets/perfil.jpg" alt="Ir al inicio" />
           </a>
 
-          <ul>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+            <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+            <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
 
           <button
@@ -36,9 +36,9 @@
         </div>
       </nav>
       <header>
-        <h1>Jeronimo Murcia</h1>
-        <h2>Ingeniero de Software</h2>
-        <img src="./assets/perfil.jpg" alt="Imagen de perfil de Jeronimo Murcia" />
+        <h1 class="header-title">Jeronimo Murcia</h1>
+        <h2 class="header-subtitle">Ingeniero de Software</h2>
+        <img class="header-img" src="./assets/perfil.jpg" alt="Imagen de perfil de Jeronimo Murcia" />
       </header>
 
       <section id="about-me">
@@ -66,6 +66,7 @@
                 rel="noopener noreferrer"
               >
                 <img
+                  class="experience-logo"
                   src="./assets/mercadoLibre.png"
                   alt="Logo de Mercado Libre"
                 />
@@ -73,29 +74,30 @@
             </div>
 
             <div class="info-container">
-              <h3>Ingeniero Backend Ssr.</h3>
-              <h4>
+              <h3 class="info-title">Ingeniero Backend Ssr.</h3>
+              <h4 class="info-subtitle">
                 <a
+                  class="info-company-link"
                   href="https://careers-meli.mercadolibre.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Mercado Libre</a
                 >
               </h4>
-              <span class="fecha">Marzo 2023 - Presente</span>
+              <span class="date">Marzo 2023 - Presente</span>
 
               <ul class="tasks-list">
-                <li>
+                <li class="task-item">
                   Lideré la migración de un sistema monolítico hacia una
                   arquitectura de microservicios utilizando Java y Spring Boot
                   para el ecosistema de pagos.
                 </li>
-                <li>
+                <li class="task-item">
                   Optimicé consultas complejas en clústeres de bases de datos,
                   reduciendo el tiempo de respuesta de la API de transacciones
                   en un 35%.
                 </li>
-                <li>
+                <li class="task-item">
                   Colaboré en la configuración de la infraestructura en la nube
                   utilizando AWS (EC2, S3, RDS) para asegurar alta
                   disponibilidad en eventos masivos.
@@ -112,6 +114,7 @@
                 rel="noopener noreferrer"
               >
                 <img
+                  class="experience-logo"
                   src="./assets/despegar.png"
                   alt="Logo de Despegar"
                 />
@@ -119,9 +122,10 @@
             </div>
 
             <div class="info-container">
-              <h3>Desarrollador de Software Core</h3>
-              <h4>
+              <h3 class="info-title">Desarrollador de Software Core</h3>
+              <h4 class="info-subtitle">
                 <a
+                  class="info-company-link"
                   href="https://www.despegar.com.ar/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -131,17 +135,17 @@
               <span class="date">Febrero 2020 - Febrero 2023</span>
 
               <ul class="tasks-list">
-                <li>
+                <li class="task-item">
                   Desarrollé servicios de alta concurrencia en Golang para el
                   motor de búsqueda de vuelos, procesando miles de peticiones
                   por segundo.
                 </li>
-                <li>
+                <li class="task-item">
                   Implementé y administré orquestación de contenedores con
                   Kubernetes en Google Cloud Platform (GCP) para mejorar la
                   escalabilidad dinámica.
                 </li>
-                <li>
+                <li class="task-item">
                   Diseñé flujos de comunicación eficientes entre microservicios
                   utilizando gRPC y Protocol Buffers, reduciendo la latencia de
                   red.
