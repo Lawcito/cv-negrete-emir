@@ -10,7 +10,7 @@ html {
   --tuscan-sun: #e7bb41;
   --font-main: "Merriweather", serif;
 
-  --white: #ffffff;
+  --input-images-background: #ffffff;
   --ghost-white: #fafafa;
   --text-muted-light: #666;
   --text-soft-light: #444;
@@ -236,12 +236,12 @@ header img:hover {
   outline: none;
   border-color: var(--ocean-mist);
   box-shadow: 0 0 0 3px rgba(68, 187, 164, 0.2);
-  background-color: var(--white);
+  background-color: var(--input-images-background);
 }
 
 .send-button {
   background-color: var(--ocean-mist);
-  color: var(--white);
+  color: var(--input-images-background);
   border: none;
   padding: 1rem;
   border-radius: 4px;
@@ -301,7 +301,7 @@ header img:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   object-fit: contain;
-  background-color: var(--white);
+  background-color: var(--input-images-background);
   padding: 5px;
 }
 
