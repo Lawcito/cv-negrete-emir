@@ -10,6 +10,13 @@ html {
   --tuscan-sun: #e7bb41;
 
   --font-main: "Merriweather Local", serif;
+
+  --input-images-background: #ffffff;
+  --ghost-white: #fafafa;
+  --text-muted-light: #666;
+  --text-soft-light: #444;
+  --text-muted-dark: #a0aab2;
+  --text-soft-dark: #e5e7eb;
   --base-font-size: 1rem;
 }
 
@@ -154,14 +161,14 @@ header img:hover {
 .date {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
   font-style: italic;
   margin-bottom: 1rem;
 }
 
 .tasks-list {
   padding-left: 1.2rem;
-  color: #444;
+  color: var(--text-soft);
 }
 
 .tasks-list li {
@@ -230,7 +237,7 @@ header img:hover {
   border-radius: 0.25rem;
   font-family: inherit;
   font-size: 1rem;
-  background-color: #fafafa;
+  background-color: var(--ghost-white);
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -241,12 +248,12 @@ header img:hover {
   outline: none;
   border-color: var(--accent-primary);
   box-shadow: 0 0 0 0.1875rem rgba(68, 187, 164, 0.2);
-  background-color: #fff;
+  background-color: var(--input-images-background);
 }
 
 .send-button {
   background-color: var(--accent-primary);
-  color: #fff;
+  color: var(--input-images-background);
   border: none;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -306,7 +313,7 @@ header img:hover {
   box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   object-fit: contain;
-  background-color: #fff;
+  background-color: var(--input-images-background);
   padding: 0.3125rem;
 }
 
@@ -417,6 +424,9 @@ body.theme-dark {
   --bg-body-color: #1a1c1e;
   --text-main-color: #f5f5f5;
   --border-divider-color: #393e41;
+  
+  --text-muted: var(--text-muted-dark);
+  --text-soft: var(--text-soft-dark);
 }
 
 body.theme-dark main {
@@ -437,16 +447,16 @@ body.theme-dark .technical-skill-card {
 body.theme-dark .input-group input,
 body.theme-dark .input-group textarea {
   background-color: #1a1c1e;
-  color: #f5f5f5;
-  border-color: #444;
+  color: var(--gunmetal);
+  border-color: var(--text-soft-light); 
 }
 
 body.theme-dark .date {
-  color: #a0aab2;
+  color: var(--text-muted-dark); 
 }
 
 body.theme-dark .tasks-list {
-  color: #e5e7eb;
+  color: var(--text-soft-dark);
 }
 
 body.theme-dark .info-container h4 a {
