@@ -386,11 +386,14 @@ header img:hover {
   letter-spacing: 0.0625rem;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
   color: var(--accent-primary);
-  background-color: var(--bg-body-color);
+  background-color: var(--ocean-mist);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 48rem) {
